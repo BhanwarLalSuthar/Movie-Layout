@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Layout</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .main-container>div {
+            box-shadow: rgba(10, 10, 10, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Ensures even spacing between elements */
+            height: 100%;
+
+
+        }
+
+        img {
+            width: 100%;
+
+            max-height: 60%;
+            /* Make sure the image does not exceed 70% of the div's height */
+            object-fit: cover;
+            /* Ensures the image covers the div area without distortion */
+
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: auto;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+
+        p {
+            margin-top: auto;
+            font-size: 16px;
+            color: #555;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: auto;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div>
+
+            <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202206/Sita-Ramam-poster_1656325728.jpg"
+                alt="">
+
+            <h2>Sita Ramam</h2>
+            <p>Rating:4.5</p>
+            <button>Book now</button>
+        </div>
+        <div>
+
+            <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2024-08-13/image-1%20%282%29%20%282%29_369267.png"
+                alt="">
+
+            <h2>Sita Ramam</h2>
+            <p>Rating:4.5</p>
+            <button>Book now</button>
+        </div>
+        <div>
+
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/2.0_film_poster.jpg"
+                alt="">
+
+            <h2>Sita Ramam</h2>
+            <p>Rating:4.5</p>
+            <button>Book now</button>
+        </div>
+        <div>
+
+            <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202206/Sita-Ramam-poster_1656325728.jpg"
+                alt="">
+
+            <h2>Sita Ramam</h2>
+            <p>Rating:4.5</p>
+            <button>Book now</button>
+        </div>
+        <div>
+
+            <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202206/Sita-Ramam-poster_1656325728.jpg"
+                alt="">
+
+            <h2>Sita Ramam</h2>
+            <p>Rating:4.5</p>
+            <button>Book now</button>
+        </div>
+        <div>
+
+            <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202206/Sita-Ramam-poster_1656325728.jpg"
+                alt="">
+
+            <h2>Sita Ramam</h2>
+            <p>Rating:4.5</p>
+            <button>Book now</button>
+        </div>
+    </div>
+</body>
+
+</html>
